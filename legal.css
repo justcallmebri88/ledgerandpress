@@ -1,0 +1,24 @@
+@font-face{font-family:'Marcellus';src:url('fonts/Marcellus-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Jost';src:url('fonts/Jost-Light.ttf') format('truetype');font-weight:100 350;font-style:normal;font-display:swap}
+@font-face{font-family:'Jost';src:url('fonts/Jost-Variable.ttf') format('truetype');font-weight:351 900;font-style:normal;font-display:swap}
+*{box-sizing:border-box}
+html{background:#2A0B0F}
+body{margin:0;background:#EFE8DC;color:#2E1F1A;font-family:'Jost',sans-serif;font-weight:400;font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:#6E1F2A;color:#F5EEE2}
+a{color:#7A2230}
+img{display:block}
+.hdr{background:#2A0B0F;border-bottom:1px solid rgba(244,239,230,.22)}
+.hdr-in{max-width:1320px;margin:0 auto;padding:0 40px;min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.hdr img{height:18px;width:auto}
+.back{font-size:12px;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:#EADFCC;text-decoration:none;min-height:44px;display:flex;align-items:center}
+main{max-width:780px;margin:0 auto;padding:88px 40px 120px}
+h1{font-family:'Marcellus',serif;font-weight:400;font-size:clamp(44px,7vw,80px);line-height:1;color:#3D1016;margin:0 0 16px}
+.eff{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#7A2230;margin:0 0 48px}
+h2{font-family:'Marcellus',serif;font-weight:400;font-size:28px;line-height:1.2;color:#3D1016;margin:56px 0 12px}
+p,li{margin:0 0 16px}
+ul{padding-left:22px;margin:0 0 16px}
+.ftr{background:#1C0609;color:#EADFCC;border-top:1px solid rgba(244,239,230,.22)}
+.ftr-in{max-width:1320px;margin:0 auto;padding:36px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:300}
+.ftr a{color:#EADFCC;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.ftr nav{display:flex;gap:28px;flex-wrap:wrap}
+@media (max-width: 820px){.hdr-in,.ftr-in{padding-left:16px;padding-right:16px}main{padding:56px 16px 88px}body{font-size:17px}}

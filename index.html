@@ -498,6 +498,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 #experience .step-on .step-t{color:#3D1016}
 #experience .steps{display:block}
 .step-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px}
+.ftr-legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 28px;padding-top:16px;padding-bottom:28px;border-top:1px solid rgba(244,239,230,.12);font-size:11px;font-weight:300;letter-spacing:.24em;text-transform:uppercase;color:rgba(234,223,204,.75)}
+.ftr-legal nav{display:flex;flex-wrap:wrap;gap:0 28px}
+.ftr-legal a{color:#EADFCC;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.ftr-legal a:hover{text-decoration:underline}
 .step-item{display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid rgba(61,16,22,.2)}
 #experience .step-item .step-d{max-height:none;opacity:1;margin-top:0;overflow:visible}
 @media (max-width: 1080px){.step-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 40px}}
@@ -771,7 +775,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
           </sc-if>
           <sc-if value="{{notSent}}" hint-placeholder-val="{{true}}">
             <form onSubmit="{{submit}}" aria-label="Event inquiry" novalidate>
-              <p class="req-note">All fields are required unless marked optional.</p>
+              <p class="req-note">All fields are required unless marked optional. See our <a href="privacy.html">Privacy Policy</a> for how we use your details.</p>
               <div class="fgrid">
                 <fieldset id="f-svc" class="fld full" aria-describedby="err-svc">
                   <legend>Services of interest</legend>
@@ -850,6 +854,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
       <img src="images/logo-cream.png" alt="Ledger &amp; Press" style="height: 18px; width: auto">
       <span class="scr gold" style="font-size: 26px">Marking what matters.</span>
       <a href="#top" class="cap" style="text-decoration: none; color: #EADFCC; min-height: 44px; display: flex; align-items: center">Back to top</a>
+    </div>
+    <div class="wrap ftr-legal">
+      <span>© 2026 Ledger &amp; Press</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
     </div>
   </footer>
 </div>
